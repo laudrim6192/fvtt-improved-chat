@@ -1,0 +1,21 @@
+{
+  "name": "improved-chat",
+  "title": "Improved Chat",
+  "description": "Makes the chat better, FG-style",
+  "version": "1.0.1",
+  "minimumCoreVersion": "0.6.2",
+  "compatibleCoreVersion": "0.8.0",
+  "author": "Shekkie",
+  "esmodules": [
+    "./improved-chat.js"
+  ],
+  "scripts": [
+  ],
+  "styles": [
+  ],
+  "languages": [
+  ],
+  "url": "https://github.com/laudrim6192/fvtt-improved-chat",
+  "manifest": "https://github.com/laudrim6192/fvtt-improved-chat/releases/latest/download/module.json",
+  "download": "https://github.com/laudrim6192/fvtt-improved-chat/releases/latest/download/module.zip"
+}
