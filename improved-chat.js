@@ -9,8 +9,6 @@ const is_key_down = (() => {
 Hooks.on("preCreateChatMessage", (chatMessage, content) => {
 
   var is_alt_pressed = is_key_down("Alt");
-  console.log(is_alt_pressed);
-  console.log(chatMessage);
   if (is_alt_pressed)
   {
     chatMessage.data.update({type: CONST.CHAT_MESSAGE_TYPES.OOC});
