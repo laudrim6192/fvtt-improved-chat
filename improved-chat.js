@@ -9,10 +9,15 @@ const is_key_down = (() => {
 Hooks.on("preCreateChatMessage", (chatMessage, content) => {
 
   var is_alt_pressed = is_key_down("Alt");
+  console.log(is_alt_pressed);
+  console.log(chatMessage);
   if (is_alt_pressed)
   {
-    chatMessage.type=CHAT_MESSAGE_TYPES.OOC;
-    delete chatMessage.speaker;
+    chatMessage.data.update({type: CONST.CHAT_MESSAGE_TYPES.OOC});
+    chatMessage.data.speaker.update({scene: null, actor: null, token: null, alias: game.user.name});
+    chatMessage.data.type = CONST.CHAT_MESSAGE_TYPES.OOC;
+    console.log(chatMessage.data.type);
   }
+  console.log(chatMessage);
 });
 
