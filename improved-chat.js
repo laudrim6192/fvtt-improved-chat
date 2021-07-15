@@ -14,8 +14,6 @@ Hooks.on("preCreateChatMessage", (chatMessage, content) => {
     chatMessage.data.update({type: CONST.CHAT_MESSAGE_TYPES.OOC});
     chatMessage.data.speaker.update({scene: null, actor: null, token: null, alias: game.user.name});
     chatMessage.data.type = CONST.CHAT_MESSAGE_TYPES.OOC;
-    console.log(chatMessage.data.type);
   }
-  console.log(chatMessage);
 });
 
